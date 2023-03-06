@@ -1,0 +1,31 @@
+<html>
+  <!-- responsive web page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>projects</title>
+    <link rel="icon" type="image/x-icon" href="photos/favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- nav -->
+      <div id="myNav" class="nav">
+        <a href="index.html" id="home">home</a>
+        <a href="projects.html" id="projects" class="current-page">projects</a>
+        <a href="contact.html" id="contact">contact</a>
+      </div>
+      <!-- / nav -->
+
+      <h1 class="projects-h1">stuff i've created</h1>
+      <div class="projects"></div>
+
+      <script type="module">
+        import { fetchProjects } from "/projects.js";
+        fetchProjects();
+      </script>
+      <!-- / projects -->
+    </div>
+    <!-- / container -->
+  </body>
+</html>

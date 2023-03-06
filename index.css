@@ -1,0 +1,340 @@
+
+/* ========== NAV =====================================================*/
+#myNav {
+    text-align: center; /* centers content in div */
+}
+
+#myNav a {
+    transition: 0.3s; /* add transition on hover */
+    padding: 10px; /* 10px top bottom */
+    text-decoration: none;
+    font-size: 1.25rem;
+    /* color: #7d8491; */
+    color:#71697a;
+    border-radius: 5px 5px;
+    /*border: 5px solid greenyellow;*/
+    margin: 0 1em;
+}
+
+#myNav .current-page, #myNav a:hover {
+    text-decoration: underline;
+}
+
+#home:hover {
+    background-color: #3f334d;
+    color: white;
+}
+
+#about:hover {
+    background-color: #574b60;
+    color: white;
+}
+
+#projects:hover {
+    background-color: #7d8491;
+    color: white;
+}
+
+#contact:hover {
+    background-color: #c0c5c1;
+    color: white;
+}
+
+/* ======== LAYOUT ================================================*/
+
+body {
+    margin: 0;
+    font-size: 16px;
+    color: #5d576b;    
+    font-family: 'Courier New', Courier, monospace;
+    /*font-family: optima;*/
+}
+
+.container {
+    width: 60%;
+    max-width: 750px;
+    margin: 30 auto; /* centers */
+    /* border: 5px dotted pink; */
+}
+
+/* 
+===============
+index.html
+=============== */
+.section-one {
+    display: flex;
+    justify-content: space-around; /* adjusts spacing between name and linkedin */
+    align-items: center; /* lines up name & linkedIn horizontally */
+    /*border: 5px dotted blueviolet;*/
+}
+
+.section-two {
+    text-align: center; /* centers content in div */
+}
+
+/* 
+===============
+activities.html
+=============== */
+.activities {
+    text-align: center;
+}
+
+
+/* 
+===============
+contact.html
+=============== */
+.main {
+    position: relative; /* parent of .text-on-balloon */
+}
+
+.contact-projects-link {
+    color: white;
+}
+
+.contact-text {
+    font-size: 1.2rem;
+}
+
+/* 
+===============
+projects.html
+=============== */
+
+.projects-h1 {
+    padding-left: 15px;
+}
+
+.projects {
+    display: flex; /* defines flex container */
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    /* border: 3px dotted magenta; */
+}
+
+.project {
+    width: 45%;
+    margin: 0.85em 0.85em;
+    /* border: 3px solid orange; */
+}
+
+.proj-name {
+    background-color:#71697a;
+    border: 3px solid #71697a;
+    text-align:center;
+    color: white;
+    border-radius: 7px 7px 0px 0px; /* rounded top corners */
+}
+
+.proj-name:hover {
+    background-color: white;
+    color: #71697a;
+}
+
+.proj-name h4 {
+    font-size: 20px;
+}
+
+.skills {
+    border: 3px solid #3f334d;
+    color:#c0c5c1;
+    background-color: #3f334d;
+    height: 150px;
+    border-radius: 0px 0px 7px 7px; /* rounded bottom corners */
+}
+
+
+
+/* =============================== PICTURES ==========================*/
+
+/* 
+===============
+index.html
+=============== */
+.profileImg {
+    max-width: 70%; /* % of parent */
+    border-radius: 50%; /* round */
+}
+
+/* 
+===============
+activities.html
+=============== */
+
+.sports {
+    width: 90%;
+    border-radius: 7px 7px;
+    margin: 5px;
+} 
+
+.activity {
+    position: relative;
+    /* parent: relative for overlay */
+
+}
+
+.sports-text {
+    position: absolute;
+    /* child: absolute for overlay */
+    bottom: 2em;
+    left: 2em;
+    color: black;
+    font-size: 1.5rem;
+    background-color: white;
+    opacity: 70%;
+    padding: 10px;
+    border-radius: 7px 7px;
+}
+
+/* 
+===============
+contact.html
+=============== */
+
+.balloon {
+    max-width: 100%;
+}
+
+
+.text-on-balloon {
+    position: absolute; /* child of .main */
+    color:white;
+    top: 35%;
+    left: 20%;
+    background-color: rgb(63, 57, 57);
+    opacity: 0.8;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+
+
+/* ============= LISTS ===============================================*/
+
+
+.section-three ul {
+    font-size: 1rem; /*fonts => rem, margins/padding => em */
+    display: flex; /* displays side-by-side */
+    list-style-type: none;
+}
+
+.section-three ul li {
+    padding-right: 2em;
+    font-size: 0.9rem;
+
+}
+
+.section-three ul li a:visited,
+.section-one a,
+.section-three ul li a:link{
+    color: #71697a;
+}
+
+ol {
+    list-style-type:disc;
+}
+
+/* ======== MEDIA QUERIES ================================================*/
+
+
+
+/* <= 700px, reformat:
+nav, priorities list, h1, h3, linkedin icon */
+@media (max-width: 775px) {
+
+    #myNav{
+        display: flex;
+        flex-direction: column; /* flip axis */
+    }
+
+    #myNav a{
+        /* font-size: 0.8rem; */
+        padding: 3px;
+    }
+    ul {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+    h3{
+        text-align: center;
+    }
+
+    .fa-brands {
+        font-size: 1em;
+    }
+}
+
+/* <= 725px, reformat:
+profile img, contact text background, contact text
+*/
+@media (max-width: 725px){
+    .profileImg {
+            min-width: 90%;
+        }
+
+    .text-on-balloon {
+        opacity: 0.83;
+    }   
+    
+    .contact-text {
+        font-size: 0.8rem;
+    }
+}
+
+/* <= 815px, reformat: 
+contact text background
+*/
+@media (max-width: 815px) {
+    .text-on-balloon {
+        left: 8%;
+    }
+
+}
+
+
+/* <= 1000px, reformat: 
+activities text overlay, contact balloon text overlay
+*/
+@media (max-width: 1000px) {
+    .sports-text {
+        font-size: 1rem;
+        bottom: 0.5em;
+    }
+
+    .text-on-balloon {
+        margin-right: 15px;
+    }
+}
+
+/* <= 1091px, reformat:
+projects container, project tiles
+*/
+@media (max-width: 1091px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        
+    .project {
+        margin: auto;
+        min-width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .projects-h1 {
+        text-align: center;
+    }
+
+    .skills {
+        text-align: left;
+    }
+}
+
