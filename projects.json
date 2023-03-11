@@ -2,14 +2,7 @@
   "projects": [
     {
       "name": "this website!",
-      "skills": [
-        "HTML",
-        "CSS",
-        "node.js",
-        "JavaScript",
-        "JSON",
-        "Responsive Web Design"
-      ]
+      "skills": "built from scratch using JavaScript, HTML, and CSS on the front end + Node.js and Express on the backend"
     },
     {
       "name": "book list",

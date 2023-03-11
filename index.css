@@ -8,7 +8,7 @@
     transition: 0.3s; /* add transition on hover */
     padding: 10px; /* 10px top bottom */
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     /* color: #7d8491; */
     color:#71697a;
     border-radius: 5px 5px;
@@ -44,9 +44,12 @@
 
 body {
     margin: 0;
-    font-size: 16px;
-    color: #5d576b;    
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #5d576b;
+    font-family: 'Rajdhani',
+            Verdana,
+            sans-serif;
+    /* font-family: 'Courier New', Courier, monospace; */
     /*font-family: optima;*/
 }
 
@@ -71,6 +74,8 @@ index.html
 .section-two {
     text-align: center; /* centers content in div */
 }
+
+
 
 /* 
 ===============
@@ -104,45 +109,57 @@ projects.html
 
 .projects-h1 {
     padding-left: 15px;
+    text-align: center; /* centers content in div */
 }
 
 .projects {
     display: flex; /* defines flex container */
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column; /* establishes main axis */
+    /* flex-wrap: wrap; */
     margin: auto;
-    /* border: 3px dotted magenta; */
+    border: 3px dotted magenta;
+    /* background-color: #dcdcdd; */
 }
 
 .project {
-    width: 45%;
-    margin: 0.85em 0.85em;
+    width: 50%;
+    margin: auto;
     /* border: 3px solid orange; */
+    padding: 0 0 10 0; /* T R B L */
 }
 
 .proj-name {
-    background-color:#71697a;
+    background-color:#dcdcdd;
     border: 3px solid #71697a;
     text-align:center;
-    color: white;
+    color: #71697a;
     border-radius: 7px 7px 0px 0px; /* rounded top corners */
 }
 
-.proj-name:hover {
+/* .proj-name:hover {
     background-color: white;
     color: #71697a;
-}
+} */
 
 .proj-name h4 {
-    font-size: 20px;
+    font-size: 23px;
 }
 
-.skills {
-    border: 3px solid #3f334d;
-    color:#c0c5c1;
-    background-color: #3f334d;
-    height: 150px;
+.description {
+    border: 3px solid #47404f;
+    color:#3f334d;
+    background-color: #eee5ea;
+    /* height: 130px; */
     border-radius: 0px 0px 7px 7px; /* rounded bottom corners */
+    text-align: center;
+}
+
+.descText {
+    margin: 20 10 20 10; /* T R B L */
+}
+
+.githubLink {
+    border: 3px dotted green;
 }
 
 
@@ -213,16 +230,18 @@ contact.html
 
 /* ============= LISTS ===============================================*/
 
+.section-three h3 {
+    font-size: 2rem;
+}
 
 .section-three ul {
-    font-size: 1rem; /*fonts => rem, margins/padding => em */
     display: flex; /* displays side-by-side */
     list-style-type: none;
 }
 
 .section-three ul li {
     padding-right: 2em;
-    font-size: 0.9rem;
+    font-size: 1.2rem; /*fonts => rem, margins/padding => em */
 
 }
 
@@ -231,10 +250,10 @@ contact.html
 .section-three ul li a:link{
     color: #71697a;
 }
-
+/* 
 ol {
     list-style-type:disc;
-}
+} */
 
 /* ======== MEDIA QUERIES ================================================*/
 

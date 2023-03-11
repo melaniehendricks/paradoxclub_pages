@@ -26,24 +26,23 @@ export function fetchProjects() {
         projName.appendChild(name);
         project.appendChild(projName);
 
-        // create skills div + ordered list
+        // create description div + paragraph
         const skills = document.createElement("div");
-        skills.setAttribute("class", "skills");
-        const list = document.createElement("ol");
+        skills.setAttribute("class", "description");
+        const desc = document.createElement("p");
+        desc.setAttribute("class", "descText");
+        desc.innerHTML = projects[i].skills;
 
-        // iterate through skills,
-        // create li for each and assign skill at index
-        // append li to ordered list
-        for (let s = 0; s < projects[i].skills.length; s++) {
-          const listItem = document.createElement("li");
-          listItem.innerHTML = projects[i].skills[s];
-          list.appendChild(listItem);
-        }
-
-        // append ordered list to skills div
+        // append description to skills div
         // append skills div to project div
-        skills.appendChild(list);
+        skills.appendChild(desc);
         project.appendChild(skills);
+
+        // create github div
+        // append to project div
+        const githubDiv = document.createElement("div");
+        githubDiv.setAttribute("class", "githubLink");
+        project.appendChild(githubDiv);
 
         project.addEventListener("click", clickableProjects);
 
