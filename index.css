@@ -44,11 +44,12 @@
 
 body {
     margin: 0;
-    font-size: 18px;
+    font-size: 25px;
     color: #5d576b;
     font-family: 'Rajdhani',
             Verdana,
             sans-serif;
+    /* border: 3px solid red; */
     /* font-family: 'Courier New', Courier, monospace; */
     /*font-family: optima;*/
 }
@@ -57,7 +58,7 @@ body {
     width: 60%;
     max-width: 750px;
     margin: 30 auto; /* centers */
-    /* border: 5px dotted pink; */
+    /* border: 5px dotted magenta; */
 }
 
 /* 
@@ -75,6 +76,36 @@ index.html
     text-align: center; /* centers content in div */
 }
 
+.section-three {
+    border: 3px solid green;
+}
+
+.section-three h3 {
+    font-size: 2rem;
+    border: 3px dotted orange;
+}
+
+.section-three ul {
+    display: flex;
+    /* displays side-by-side */    
+    list-style-type: none;
+    /* width: 95%; */
+    border: 3px solid blue;    
+}
+
+.section-three ul li {
+    /* priorities list */
+    padding-right: 2em;
+    font-size: 1.5rem;
+    /*fonts => rem, margins/padding => em */
+    border: 3px dotted pink;
+}
+
+.section-three ul li a:visited,
+.section-one a,
+.section-three ul li a:link {
+    color: #71697a;
+}
 
 
 /* 
@@ -121,10 +152,10 @@ projects.html
 }
 
 .project {
-    width: 50%;
+    width: 75%;
     margin: auto;
     /* border: 3px solid orange; */
-    padding: 0 0 30 0; /* T R B L */
+    padding: 0 0 60 0; /* T R B L */
 }
 
 .proj-name {
@@ -170,7 +201,9 @@ projects.html
 
 
 
-/* =============================== PICTURES ==========================*/
+/* =============================== 
+        PICTURES 
+=============================== */
 
 /* 
 ===============
@@ -233,35 +266,9 @@ contact.html
 }
 
 
-
-/* ============= LISTS ===============================================*/
-
-.section-three h3 {
-    font-size: 2rem;
-}
-
-.section-three ul {
-    display: flex; /* displays side-by-side */
-    list-style-type: none;
-}
-
-.section-three ul li {
-    padding-right: 2em;
-    font-size: 1.2rem; /*fonts => rem, margins/padding => em */
-
-}
-
-.section-three ul li a:visited,
-.section-one a,
-.section-three ul li a:link{
-    color: #71697a;
-}
-/* 
-ol {
-    list-style-type:disc;
-} */
-
-/* ======== MEDIA QUERIES ================================================*/
+/* =========================================
+        MEDIA QUERIES
+=============================================*/
 
 
 
@@ -290,10 +297,11 @@ nav, priorities list, h1, h3, linkedin icon */
     h3{
         text-align: center;
     }
-
+/* 
     .fa-brands {
-        font-size: 1em;
-    }
+        font-size: 1em; 
+    } */    
+    
 }
 
 /* <= 725px, reformat:
@@ -301,7 +309,7 @@ profile img, contact text background, contact text
 */
 @media (max-width: 725px){
     .profileImg {
-            min-width: 90%;
+            min-width: 100%;
         }
 
     .text-on-balloon {

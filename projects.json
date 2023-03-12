@@ -4,6 +4,12 @@
       "name": "this website!",
       "skills": "built from scratch using JavaScript, HTML, and CSS on the front end + Node.js and Express on the backend",
       "url": "https://github.com/melaniehendricks/paradoxclub_pages"
+    },
+
+    {
+      "name": "book list",
+      "skills": "a React app that displays all the books I read in 2022, utilizing basic React tools like components and props",
+      "url": "https://github.com/melaniehendricks/booklist"
     }
   ]
 }
