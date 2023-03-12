@@ -2,48 +2,8 @@
   "projects": [
     {
       "name": "this website!",
-      "skills": "built from scratch using JavaScript, HTML, and CSS on the front end + Node.js and Express on the backend"
-    },
-    {
-      "name": "book list",
-      "skills": ["JavaScript", "React", "React Basics: components, props"]
-    },
-    {
-      "name": "weekly to-do list",
-      "skills": ["JavaScript", "React", "State Hook"]
-    },
-    {
-      "name": "tours",
-      "skills": [
-        "JavaScript",
-        "React",
-        "State Hook",
-        "Effect Hook",
-        "async fetch"
-      ]
-    },
-    {
-      "name": "accordion questions",
-      "skills": ["JavaScript", "React", "State Hook", "conditional rendering"]
-    },
-    {
-      "name": "menu",
-      "skills": ["JavaScript", "React", "State Hooks", "filter array"]
-    },
-    {
-      "name": "color shades gen",
-      "skills": ["JavaScript", "React", "State Hooks", "Effect Hook"]
-    },
-    {
-      "name": "grocery bud",
-      "skills": [
-        "JavaScript",
-        "React",
-        "State Hooks",
-        "Effect Hooks",
-        "conditional rendering",
-        "local storage"
-      ]
+      "skills": "built from scratch using JavaScript, HTML, and CSS on the front end + Node.js and Express on the backend",
+      "url": "https://github.com/melaniehendricks/paradoxclub_pages"
     }
   ]
 }

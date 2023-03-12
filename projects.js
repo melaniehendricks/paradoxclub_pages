@@ -7,6 +7,7 @@ export function fetchProjects() {
     .then((data) => {
       console.log("fetch successful");
 
+      // iterate over projects[]
       let projects = data["projects"];
       for (let i = 0; i < 8; i++) {
         const projectsContainer = document.querySelector(".projects");
@@ -19,11 +20,17 @@ export function fetchProjects() {
         const projName = document.createElement("div");
         projName.setAttribute("class", "proj-name");
 
-        // create h4 + append name to projName
-        // append projName to project
+        // create name & set innerHTML
+        // append name to projName
         const name = document.createElement("h4");
         name.innerHTML = projects[i].name;
         projName.appendChild(name);
+
+        // create line & append to projName
+        // append projName to project
+        const lineDiv = document.createElement("div");
+        lineDiv.setAttribute("class", "line");
+        projName.appendChild(lineDiv);
         project.appendChild(projName);
 
         // create description div + paragraph
@@ -38,20 +45,24 @@ export function fetchProjects() {
         skills.appendChild(desc);
         project.appendChild(skills);
 
-        // create github div
-        // append to project div
+        // create github div + icon <a> tag
         const githubDiv = document.createElement("div");
         githubDiv.setAttribute("class", "githubLink");
-        project.appendChild(githubDiv);
+        const gitIcon = document.createElement("a");
 
-        project.addEventListener("click", clickableProjects);
+        // get url and set <a> attributes
+        // append gitIcon to githubDiv
+        // append githubDiv to project
+        let url = projects[i].url;
+        gitIcon.setAttribute("href", url);
+        gitIcon.setAttribute("target", "_blank");
+        gitIcon.setAttribute("class", "fa-brands fa-github fa-2x");
+        gitIcon.setAttribute("title", "check out this repo on my GitHub!");
+        githubDiv.appendChild(gitIcon);
+        project.appendChild(githubDiv);
 
         // append project to projects
         projectsContainer.appendChild(project);
       }
     });
-}
-
-export function clickableProjects() {
-  console.log("click");
 }
