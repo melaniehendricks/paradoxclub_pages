@@ -2,14 +2,19 @@
   "projects": [
     {
       "name": "this website!",
-      "skills": "built from scratch using JavaScript, HTML, and CSS on the front end + Node.js and Express on the backend",
+      "skills": "completely responsive and built from scratch using JavaScript, HTML, and CSS on the front end + Raspberry Pi OS, Node.js, and Express on the backend",
       "url": "https://github.com/melaniehendricks/paradoxclub_pages"
     },
 
     {
       "name": "book list",
-      "skills": "a React app that displays all the books I read in 2022, utilizing basic React tools like components and props",
+      "skills": "a React app that displays all the books I read in 2022, utilizing basic React tools like Components and Props",
       "url": "https://github.com/melaniehendricks/booklist"
+    },
+    {
+      "name": "random Q&A w/ me",
+      "skills": "a React app that displays a set of questions w/ toggle dropdowns of my answers. it showcases my use of React concepts such as State Hooks and Conditional Rendering (and some fun facts about me)",
+      "url": "https://github.com/melaniehendricks/random-Q-and-A"
     }
   ]
 }
