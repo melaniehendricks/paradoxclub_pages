@@ -1,7 +1,10 @@
 
-/* ========== NAV =====================================================*/
+/* ========================
+        NAV 
+=========================== */
 #myNav {
     text-align: center; /* centers content in div */
+    /* border: 3px solid pink; */
 }
 
 #myNav a {
@@ -12,7 +15,7 @@
     /* color: #7d8491; */
     color:#71697a;
     border-radius: 5px 5px;
-    /*border: 5px solid greenyellow;*/
+    /* border: 5px solid greenyellow; */
     margin: 0 1em;
 }
 
@@ -22,11 +25,6 @@
 
 #home:hover {
     background-color: #3f334d;
-    color: white;
-}
-
-#about:hover {
-    background-color: #574b60;
     color: white;
 }
 
@@ -40,7 +38,9 @@
     color: white;
 }
 
-/* ======== LAYOUT ================================================*/
+/* ===================
+        LAYOUT 
+====================== */
 
 body {
     margin: 0;
@@ -58,13 +58,12 @@ body {
     width: 60%;
     max-width: 750px;
     margin: 30 auto; /* centers */
-    border: 5px dotted magenta;
+    /* border: 5px dotted magenta; */
 }
 
-/* 
-===============
-index.html
-=============== */
+/* ===============
+    index.html
+================== */
 .section-one {
     display: flex;
     justify-content: space-around; /* adjusts spacing between name and linkedin */
@@ -72,9 +71,14 @@ index.html
     /*border: 5px dotted blueviolet;*/
 }
 
+.section-one a:hover {
+    color: #d4afb9;
+}
+
 .section-two {
     text-align: center; /* centers content in div */
 }
+
 
 .section-three {
     /* border: 3px solid green; */
@@ -107,6 +111,15 @@ index.html
     color: #71697a;
 }
 
+.profileImg {
+    max-width: 70%;
+    /* % of parent */
+    border-radius: 50%;
+    /* round */
+    border: 2px solid #d4afb9;
+    /* border-color: #96939b; */
+}
+
 
 /* 
 ===============
@@ -116,22 +129,32 @@ activities.html
     text-align: center;
 }
 
-
-/* 
-===============
-contact.html
-=============== */
-.main {
-    position: relative; /* parent of .text-on-balloon */
+/* pictures */
+.sports {
+    width: 90%;
+    border-radius: 7px 7px;
+    margin: 5px;
 }
 
-.contact-projects-link {
-    color: white;
+.activity {
+    position: relative;
+    /* parent: relative for overlay */
+
 }
 
-.contact-text {
-    font-size: 1.2rem;
+.sports-text {
+    position: absolute;
+    /* child: absolute for overlay */
+    bottom: 2em;
+    left: 2em;
+    color: black;
+    font-size: 1.5rem;
+    background-color: white;
+    opacity: 70%;
+    padding: 10px;
+    border-radius: 7px 7px;
 }
+
 
 /* 
 ===============
@@ -163,7 +186,6 @@ projects.html
     /* border: 3px solid green; */
     text-align:center;
     color: #71697a;
-    border-radius: 7px 7px 0px 0px; /* rounded top corners */
 }
 
 .proj-name .line {
@@ -174,12 +196,12 @@ projects.html
 .proj-name h4 {
     font-size: 27px;
     margin: 20 0 10 0; /*T R B L */
+    /* border: 3px dotted yellow; */
 }
 
 .description {
     /* border: 3px solid blue; */
     color:#3f334d;
-    border-radius: 0px 0px 7px 7px; /* rounded bottom corners */
     text-align: center;
 }
 
@@ -200,64 +222,38 @@ projects.html
     text-align: center;
 }
 
-
-
-/* =============================== 
-        PICTURES 
-=============================== */
-
-/* 
-===============
-index.html
-=============== */
-.profileImg {
-    max-width: 70%; /* % of parent */
-    border-radius: 50%; /* round */
-}
-
-/* 
-===============
-activities.html
-=============== */
-
-.sports {
-    width: 90%;
-    border-radius: 7px 7px;
-    margin: 5px;
-} 
-
-.activity {
-    position: relative;
-    /* parent: relative for overlay */
-
-}
-
-.sports-text {
-    position: absolute;
-    /* child: absolute for overlay */
-    bottom: 2em;
-    left: 2em;
-    color: black;
-    font-size: 1.5rem;
-    background-color: white;
-    opacity: 70%;
-    padding: 10px;
-    border-radius: 7px 7px;
-}
-
 /* 
 ===============
 contact.html
 =============== */
-
-.balloon {
-    max-width: 100%;
+.main {
+    position: relative;
+    /* parent of .text-on-balloon */
 }
 
+.contact-projects-link {
+    color: white;
+}
+
+.contact-h1 {
+    text-align: center;
+}
+
+.balloon {
+    max-width: 80%;
+    border-radius: 7px 7px;
+    border-style: solid;
+    border-color: #d4afb9;
+}
+
+.balloon-div{
+    text-align: center;
+}
 
 .text-on-balloon {
-    position: absolute; /* child of .main */
-    color:white;
+    position: absolute;
+    /* child of .main */
+    color: white;
     top: 35%;
     left: 20%;
     background-color: rgb(63, 57, 57);
@@ -265,6 +261,7 @@ contact.html
     padding: 0 20px;
     border-radius: 10px;
 }
+
 
 
 /* =========================================
