@@ -9,16 +9,38 @@
     />
     <link rel="icon" type="image/x-icon" href="photos/favicon.ico" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="darkmode.css" />
+    <script
+      src="https://kit.fontawesome.com/fe8408d55b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
-      <div id="myNav" class="nav">
-        <a href="index.html" id="home">home</a>
-        <a href="projects.html" id="projects">projects</a>
-        <a href="contact.html" id="contact" class="current-page">contact</a>
+      <div class="navToggle">
+        <!-- #myNav instead of <nav><ul> because of <ul> in section-two -->
+        <div id="myNav" class="nav">
+          <a href="index.html" id="home">home</a>
+          <a href="projects.html" id="projects">projects</a>
+          <a href="contact.html" id="contact" class="current-page">contact</a>
+        </div>
+        <!-- end nav bar -->
+
+        <!-- toggle -->
+        <div class="toggle-and-icons">
+          <i class="fa-solid fa-sun"></i>
+          <label class="switch">
+            <input type="checkbox" id="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <i class="fa-solid fa-moon"></i>
+        </div>
+
+        <script type="module">
+          import { toggleMode } from "./darkmode.js";
+          toggleMode();
+        </script>
       </div>
-      <!-- / nav bar -->
+      <!-- end navToggle -->
       <h1 class="contact-h1">get in touch w/ me</h1>
       <div class="main">
         <div class="text-on-balloon">
