@@ -8,14 +8,14 @@
     display: flex;
     /* defines alignment along main axis */
     justify-content: space-evenly;
-    border: 3px dotted yellow;
+    /* border: 3px dotted yellow; */
     align-items: center; /* justify-content but for cross axis */
 }
 
 
 #myNav {
     text-align: center; /* centers content in div */
-    border: 3px solid pink;
+    /* border: 3px solid pink; */
 }
 
 #myNav a {
@@ -53,16 +53,26 @@
     Darkmode Toggle 
 ~~~~~~~~~~~~~~~~~~~~ */
 
-.toggle {
+.toggle-and-icons {
     /* border: 3px solid green; */
+    display: flex;
+    align-items: center;
+    font-size: 0.875em;
+}
+
+.fa-sun .fa-moon {
+    
 }
 
 /* box around slider */
 .switch {
+    /* border: 3px solid green; */
     position: relative;
     display: inline-block;
     width: 55px;
     height: 27px; /* original 34 */
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* hide default HTML checkbox */
@@ -81,7 +91,6 @@
     right: 0;
     bottom: 0;
     background-color: #5d576b;
-    /* -webkit-transition: .4s; */
     transition: .4s;
 }
 
@@ -93,7 +102,6 @@
     left: 3px;
     bottom: 3px;
     background-color: white;
-    /* -webkit-transition: .4s; */
     transition: .4s;
 }
 
@@ -101,13 +109,8 @@ input:checked + .slider {
     background-color: #bfb6bb;
 }
 
-input:focus + .slider {
-    /* box-shadow: 0 0 1px #2196F3; */
-}
 
 input:checked + .slider:before {
-    /* -webkit-transform: translateX(29px); slide right */
-    /* -ms-transform: translateX(29px); slide back left */
     transform: translateX(27px);
 }
 
@@ -431,6 +434,17 @@ activities text overlay, contact balloon text overlay
 projects container, project tiles
 */
 @media (max-width: 1091px) {
+    .navToggle {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .toggle-and-icons {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 0.625em;
+    }
+
     .projects {
         display: flex;
         flex-direction: column;
@@ -475,8 +489,6 @@ projects container, project tiles
         left: 0;
         right: 0;
         bottom: 0;
-        /* background-color: #ccc; */
-        /* -webkit-transition: .4s; */
         transition: .4s;
     }
 
@@ -487,24 +499,10 @@ projects container, project tiles
         width: 17px;
         left: 3px;
         bottom: 2px;
-        /* background-color: white; */
-        /* -webkit-transition: .4s; */
         transition: .4s;
-    }
-    
-    input:checked+.slider {
-        /* background-color: #2196F3; */
-    }
-
-    input:focus+.slider {
-        /* box-shadow: 0 0 1px #2196F3; */
     }
 
     input:checked+.slider:before {
-        /* -webkit-transform: translateX(20px); */
-        /*slide right */
-        /* -ms-transform: translateX(20px); */
-        /* slide back left */
         transform: translateX(17px);
     }
 }
