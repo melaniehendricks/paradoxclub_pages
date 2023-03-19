@@ -6,14 +6,14 @@ export function toggleMode() {
   // create darkmode css link element + add attributes
   let darkLink = document.createElement("link");
   darkLink.rel = "stylesheet";
-  //   darkLink.type = "text/css";
   darkLink.href = "darkmode.css";
 
-  toggle.onchange = function (value) {
+  let slider = document.querySelector(".slider");
+  slider.addEventListener("transitionend", () => {
     if (toggle.checked == true) {
       head.appendChild(darkLink);
     } else {
       head.removeChild(darkLink);
     }
-  };
+  });
 }
