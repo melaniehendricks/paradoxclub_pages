@@ -1,7 +1,7 @@
 <html>
   <!-- responsive web page -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <head>
+  <head class="head">
     <title>my portfolio website</title>
     <link
       rel="stylesheet"
@@ -17,16 +17,35 @@
 
   <body>
     <div class="container">
-      <!-- #myNav instead of <nav><ul> because of <ul> in section-two -->
-      <div id="myNav" class="nav">
-        <a href="index.html" id="home" class="current-page">home</a>
-        <a href="projects.html" id="projects">projects</a>
-        <a href="contact.html" id="contact">contact</a>
+      <div class="navToggle">
+        <!-- #myNav instead of <nav><ul> because of <ul> in section-two -->
+        <div id="myNav" class="nav">
+          <a href="index.html" id="home" class="current-page">home</a>
+          <a href="projects.html" id="projects">projects</a>
+          <a href="contact.html" id="contact">contact</a>
+        </div>
+        <!-- end nav bar -->
+
+        <!-- toggle -->
+        <div class="toggle-and-icons">
+          <i class="fa-solid fa-sun"></i>
+          <label class="switch">
+            <input type="checkbox" id="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <i class="fa-solid fa-moon"></i>
+        </div>
+
+        <script type="module">
+          import { toggleMode } from "./darkmode.js";
+          toggleMode();
+        </script>
       </div>
-      <!-- end nav bar -->
+      <!-- end navToggle -->
 
       <div class="section-one">
         <h1>hi, i'm melanie.</h1>
+        <h2 class="testh2"></h2>
         <a
           href="https://www.linkedin.com/in/melanie-h-1b9655170/"
           target="_blank"

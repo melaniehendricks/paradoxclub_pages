@@ -1,0 +1,87 @@
+
+
+/* ================================
+                NAV 
+=================================== */
+#myNav a {
+    color: #e3dbdb;
+}
+
+#home:hover {
+    /* background-color: #dde1e4;     */
+    background-color: #dbdaea;
+    color: rgb(36, 35, 35);
+}
+
+#projects:hover {
+    background-color: #ddc3d0;    
+    color: rgb(36, 35, 35);
+}
+
+#contact:hover {
+    background-color: #b7a196;
+    color: rgb(36, 35, 35);
+}
+
+.section-one a:hover{
+    color: #bfb6bb;
+}
+
+
+
+/* ====================================
+                LAYOUT 
+======================================= */
+
+
+body {
+    /* border: 3px solid orange; */
+    background-color: rgb(36, 35, 35);
+    color: #e3dbdb;
+}
+
+/* 
+==================
+    index.html
+================== */
+
+.section-three ul li a:visited,
+.section-three ul li a:link {
+    color: #e3dbdb;
+}
+
+.profileImg {
+    border: 2px solid #6F576F;
+    /* border-color: #78a1bb; */
+    /* border-color: #93b5c6; */
+}
+
+
+/* 
+===============
+projects.html
+=============== */
+
+.proj-name {
+    /* border: 3px solid green; */
+    color: #d189be;
+}
+
+.proj-name .line {
+    background-color: #048ba8;
+}
+
+.description {
+    /* border: 3px solid blue; */
+    color: #f9f8f8;
+    text-align: center;
+}
+
+/* 
+===============
+contact.html
+=============== */
+
+.balloon {
+    border: 2px solid #b9b3b5;
+}

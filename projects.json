@@ -7,6 +7,11 @@
     },
 
     {
+      "name": "dark mode toggle",
+      "skills": "using JavaScript and CSS, it allows users to toggle between light and dark mode on any page on this website (I'm Team Dark Mode). <br> <strong><u>upcoming feature</u></strong>: maintaining state between pages when dark mode is selected",
+      "url": "https://github.com/melaniehendricks/paradoxclub_pages/blob/darkmode-toggle/darkmode.js"
+    },
+    {
       "name": "book list",
       "skills": "a React app that displays all the books I read in 2022, utilizing basic React tools like Components and Props",
       "url": "https://github.com/melaniehendricks/booklist"
