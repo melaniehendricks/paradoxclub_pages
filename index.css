@@ -2,9 +2,20 @@
 /* ========================
         NAV 
 =========================== */
+
+.navToggle {
+    /* defines flex container + enables flex context for children */
+    display: flex;
+    /* defines alignment along main axis */
+    justify-content: space-evenly;
+    border: 3px dotted yellow;
+    align-items: center; /* justify-content but for cross axis */
+}
+
+
 #myNav {
     text-align: center; /* centers content in div */
-    /* border: 3px solid pink; */
+    border: 3px solid pink;
 }
 
 #myNav a {
@@ -36,6 +47,78 @@
 #contact:hover {
     background-color: #c0c5c1;
     color: white;
+}
+
+/* ~~~~~~~~~~~~~~~~~
+    Darkmode Toggle 
+~~~~~~~~~~~~~~~~~~~~ */
+
+.toggle {
+    /* border: 3px solid green; */
+}
+
+/* box around slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 27px; /* original 34 */
+}
+
+/* hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 30;
+    height: 30;
+}
+
+/* slider  */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5d576b;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #bfb6bb;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(29px); /*slide right */
+    -ms-transform: translateX(29px); /* slide back left */
+    transform: translateX(27px);
+}
+
+/* rounded sliders - outer shape */
+.slider.round {
+    border-radius: 34px;
+}
+
+/* inner shape  */
+.slider.round::before {
+    border-radius: 50%;
 }
 
 /* ===================
@@ -366,6 +449,63 @@ projects container, project tiles
 
     .skills {
         text-align: left;
+    }
+
+    /* box around slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px; /*27*/
+        /* original 34 */
+    }
+    
+    /* hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    /* slider  */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider::before {
+        position: absolute;
+        content: "";
+        height: 16px; /* 21 */
+        width: 17px;
+        left: 3px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    input:checked+.slider {
+        background-color: #2196F3;
+    }
+
+    input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(20px);
+        /*slide right */
+        -ms-transform: translateX(20px);
+        /* slide back left */
+        transform: translateX(17px);
     }
 }
 
