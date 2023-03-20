@@ -143,8 +143,17 @@ body {
 .container {
     width: 60%;
     max-width: 750px;
-    margin: 30 auto; /* centers */
-    /* border: 5px dotted magenta; */
+    margin: 30 auto; /* 30px top, bottom and centered */
+    border: 5px dotted magenta;
+}
+
+.container-activities-contact {
+    width: 100%;
+    min-width: 440px;
+    max-width: 750px;
+    margin: 30 auto;
+    /* 30px top, bottom and centered */
+    border: 3px dotted blue;
 }
 
 /* ===============
@@ -211,21 +220,23 @@ body {
 ===============
 activities.html
 =============== */
-.activities {
-    text-align: center;
-}
 
-/* pictures */
-.sports {
-    width: 90%;
-    border-radius: 7px 7px;
-    margin: 5px;
+.activities {
+    display: flex; /* displayed side-by-side, then modified: */
+    flex-direction: column; /* pictures' displayed in column */
+    align-items: center;
 }
 
 .activity {
     position: relative;
     /* parent: relative for overlay */
+}
 
+/* pictures */
+.sports {
+    width: 100%;
+    border-radius: 7px 7px;
+    margin-bottom: 10px;
 }
 
 .sports-text {
@@ -326,7 +337,7 @@ contact.html
 }
 
 .balloon {
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 7px 7px;
     border-style: solid;
     border-color: #d4afb9;
@@ -354,7 +365,15 @@ contact.html
         MEDIA QUERIES
 =============================================*/
 
+/* <= 450px, reformat:
 
+
+*/
+@media (max-width: 450px) {
+    .sports {
+        width: 95%;
+    }
+}
 
 /* <= 700px, reformat:
 nav, priorities list, h1, h3, linkedin icon */
@@ -401,7 +420,7 @@ profile img, contact text background, contact text
     }   
     
     .contact-text {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
@@ -410,7 +429,7 @@ contact text background
 */
 @media (max-width: 815px) {
     .text-on-balloon {
-        left: 8%;
+        /* left: 8%; */
     }
 
 }
@@ -426,12 +445,12 @@ activities text overlay, contact balloon text overlay
     }
 
     .text-on-balloon {
-        margin-right: 15px;
+        /* margin-right: 15px; */
     }
 }
 
 /* <= 1091px, reformat:
-projects container, project tiles
+projects container, project tiles, dark mode toggle
 */
 @media (max-width: 1091px) {
     .navToggle {
