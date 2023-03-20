@@ -71,7 +71,7 @@ const fileRotateTransport = new winston.transports.DailyRotateFile({
 	datePattern: 'YYYY-MM-DD',
 	frequency: '24h',
 //	maxSize: '100m',
-	maxFiles: '10d',
+	maxFiles: '10',
 });
 
 
