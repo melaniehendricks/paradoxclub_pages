@@ -1,0 +1,58 @@
+<html>
+  <!-- responsive web page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>contact</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rajdhani"
+    />
+    <link rel="icon" type="image/x-icon" href="photos/favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/fe8408d55b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-activities-contact">
+      <div class="navToggle">
+        <!-- #myNav instead of <nav><ul> because of <ul> in section-two -->
+        <div id="myNav" class="nav">
+          <a href="index.html" id="home">home</a>
+          <a href="projects.html" id="projects">projects</a>
+          <a href="contact.html" id="contact" class="current-page">contact</a>
+        </div>
+        <!-- end nav bar -->
+
+        <!-- toggle -->
+        <div class="toggle-and-icons">
+          <i class="fa-solid fa-sun"></i>
+          <label class="switch">
+            <input type="checkbox" id="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <i class="fa-solid fa-moon"></i>
+        </div>
+
+        <script type="module">
+          import { toggleMode } from "./darkmode.js";
+          toggleMode();
+        </script>
+      </div>
+      <!-- end navToggle -->
+
+      <h1 class="contact-h1">volunteering</h1>
+      <div class="main">
+        <img src="photos/little.jpg" class="myLittle" alt="Big Brothers Big Sisters photo of big-little match">
+        <div class="bbbs-content">
+        <h4>Big Brothers Big Sisters of Central Arizona</h4>
+        <p>April 2022</p>
+
+        </div>
+
+        
+      <!-- / main -->
+    </div>
+  </body>
+</html>

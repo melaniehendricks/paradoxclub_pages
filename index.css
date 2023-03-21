@@ -144,7 +144,7 @@ body {
     width: 60%;
     max-width: 750px;
     margin: 30 auto; /* 30px top, bottom and centered */
-    border: 5px dotted magenta;
+    /* border: 5px dotted magenta; */
 }
 
 .container-activities-contact {
@@ -153,7 +153,7 @@ body {
     max-width: 750px;
     margin: 30 auto;
     /* 30px top, bottom and centered */
-    border: 3px dotted blue;
+    /* border: 3px dotted blue; */
 }
 
 /* ===============
@@ -359,7 +359,29 @@ contact.html
     border-radius: 10px;
 }
 
+/* 
+===============
+volunteer.html
+=============== */
 
+/* photo */
+.myLittle {
+    max-width: 100%;
+    border-radius: 7px 7px;
+    border-style: solid;
+    border-color: #d4afb9;
+}
+
+.bbbs-content {
+    text-align: center;
+}
+
+.bbbs-content h4, p {
+    /* border: 3px solid orange; */
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 /* =========================================
         MEDIA QUERIES
