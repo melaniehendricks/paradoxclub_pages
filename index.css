@@ -24,7 +24,6 @@
     text-decoration: none;
     font-size: 1.5rem;
     /* color: #7d8491; */
-    color:#71697a;
     border-radius: 5px 5px;
     /* border: 5px solid greenyellow; */
     margin: 0 1em;
@@ -32,21 +31,6 @@
 
 #myNav .current-page, #myNav a:hover {
     text-decoration: underline;
-}
-
-#home:hover {
-    background-color: #3f334d;
-    color: white;
-}
-
-#projects:hover {
-    background-color: #7d8491;
-    color: white;
-}
-
-#contact:hover {
-    background-color: #c0c5c1;
-    color: white;
 }
 
 /* ~~~~~~~~~~~~~~~~~
@@ -131,7 +115,6 @@ input:checked + .slider:before {
 body {
     margin: 0;
     font-size: 25px;
-    color: #5d576b;
     font-family: 'Rajdhani',
             Verdana,
             sans-serif;
@@ -166,8 +149,8 @@ body {
     /*border: 5px dotted blueviolet;*/
 }
 
-.section-one a:hover {
-    color: #d4afb9;
+.section-one a {
+    color: #71697a;
 }
 
 .section-two {
@@ -200,19 +183,11 @@ body {
     /* border: 3px dotted pink; */
 }
 
-.section-three ul li a:visited,
-.section-one a,
-.section-three ul li a:link {
-    color: #71697a;
-}
-
 .profileImg {
     max-width: 70%;
     /* % of parent */
     border-radius: 50%;
     /* round */
-    border: 2px solid #d4afb9;
-    /* border-color: #96939b; */
 }
 
 
@@ -282,12 +257,10 @@ projects.html
 .proj-name {
     /* border: 3px solid green; */
     text-align:center;
-    color: #71697a;
 }
 
 .proj-name .line {
     height: 1.5px;
-    background-color: #048ba8;
 }
 
 .proj-name h4 {
@@ -298,7 +271,6 @@ projects.html
 
 .description {
     /* border: 3px solid blue; */
-    color:#3f334d;
     text-align: center;
 }
 
@@ -339,8 +311,6 @@ contact.html
 .balloon {
     max-width: 100%;
     border-radius: 7px 7px;
-    border-style: solid;
-    border-color: #d4afb9;
 }
 
 .balloon-div{
@@ -355,7 +325,7 @@ contact.html
     left: 20%;
     background-color: rgb(63, 57, 57);
     opacity: 0.8;
-    padding: 0 20px;
+    padding: 15px 20px;
     border-radius: 10px;
 }
 

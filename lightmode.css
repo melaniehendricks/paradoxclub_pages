@@ -1,0 +1,81 @@
+/* ================================
+                NAV 
+=================================== */
+#myNav a {
+    color: #71697a;
+}
+
+#home:hover {
+    background-color: #3f334d;
+    color: white;
+}
+
+#projects:hover {
+    background-color: #7d8491;
+    color: white;
+}
+
+#contact:hover {
+    background-color: #c0c5c1;
+    color: white;
+}
+
+.section-one a:hover {
+    color: #d4afb9;
+}
+
+
+/* ====================================
+                LAYOUT 
+======================================= */
+
+
+body {
+    /* border: 3px solid orange; */
+    background-color: white;
+    color: #5d576b;
+}
+
+/* 
+==================
+    index.html
+================== */
+
+.section-three ul li a:visited,
+.section-three ul li a:link {
+    color: #71697a;
+}
+
+.profileImg {
+    border: 2px solid #d4afb9;
+}
+
+
+/* 
+===============
+projects.html
+=============== */
+
+.proj-name {
+    /* border: 3px solid green; */
+    color: #71697a;
+}
+
+.proj-name .line {
+    background-color: #048ba8;
+}
+
+.description {
+    /* border: 3px solid blue; */
+    color: #3f334d;
+    text-align: center;
+}
+
+/* 
+===============
+contact.html
+=============== */
+
+.balloon {
+    border: 2px solid #d4afb9;;
+}
