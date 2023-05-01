@@ -3,23 +3,25 @@
     {
       "name": "this website!",
       "skills": "completely responsive and built from scratch using JavaScript, HTML, and CSS on the front end + Raspberry Pi OS, Node.js, and Express on the backend",
-      "url": "https://github.com/melaniehendricks/paradoxclub_pages"
+      "gitUrl": "https://github.com/melaniehendricks/paradoxclub_pages"
     },
 
     {
       "name": "dark mode toggle",
       "skills": "using JavaScript and CSS, it allows users to toggle between light and dark mode on any page on this website (I'm Team Dark Mode). <br> <strong><u>upcoming feature</u></strong>: maintaining state between pages when dark mode is selected",
-      "url": "https://github.com/melaniehendricks/paradoxclub_pages/blob/darkmode-toggle/darkmode.js"
+      "gitUrl": "https://github.com/melaniehendricks/paradoxclub_pages/blob/darkmode-toggle/darkmode.js"
     },
     {
       "name": "book list",
       "skills": "a React app that displays all the books I read in 2022, utilizing basic React tools like Components and Props",
-      "url": "https://github.com/melaniehendricks/booklist"
+      "gitUrl": "https://github.com/melaniehendricks/booklist",
+      "projUrl": "https://mels-booklist.netlify.app/"
     },
     {
       "name": "random Q&A w/ me",
-      "skills": "a React app that displays a set of questions w/ toggle dropdowns of my answers. it showcases my use of React concepts such as State Hooks and Conditional Rendering (and some fun facts about me)",
-      "url": "https://github.com/melaniehendricks/random-Q-and-A"
+      "skills": "a React app that displays a set of questions w/ toggle dropdowns of my answers. it showcases my use of React concepts such as State Hooks and Conditional Rendering",
+      "url": "https://github.com/melaniehendricks/random-Q-and-A",
+      "projUrl": "https://random-q-and-a.netlify.app/"
     }
   ]
 }

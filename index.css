@@ -44,9 +44,6 @@
     font-size: 0.875em;
 }
 
-.fa-sun .fa-moon {
-    
-}
 
 /* box around slider */
 .switch {
@@ -278,17 +275,36 @@ projects.html
     margin: 12 10 20 10; /* T R B L */
 }
 
-.githubLink {
+.externalLinks {
+    display: flex; 
+    justify-content: center; /* items centered on main (horiz) axis */
+    /* align-items: baseline; items are aligned such as their baselines align */
     /* border: 3px dotted green; */
     /* margin: 0 0 20 0; */
     margin: auto;
 }
 
-.githubLink a {
-    color: #db2b39;
+.externalLinks a {
+    
     /* border: 3px dashed pink; */
     /* width: 100%; */
     text-align: center;
+}
+
+.gitDiv {
+    padding-right: 15px;
+}
+
+.deployDiv {
+    padding-top: 29px;
+}
+
+.gitDiv a {
+    color: #db2b39;
+}
+
+.deployDiv a{
+    color: #16B69E;
 }
 
 /* 
@@ -376,10 +392,6 @@ nav, priorities list, h1, h3, linkedin icon */
         flex-direction: column; /* flip axis */
     }
 
-    #myNav a{
-        /* font-size: 0.8rem; */
-        padding: 3px;
-    }
     ul {
         text-align: center;
         flex-direction: column;
@@ -445,6 +457,10 @@ activities text overlay, contact balloon text overlay
 projects container, project tiles, dark mode toggle
 */
 @media (max-width: 1091px) {
+    #myNav a {
+            /* font-size: 0.8rem; */
+            padding: 3px;
+    }
     .navToggle {
         display: flex;
         flex-direction: column-reverse;
